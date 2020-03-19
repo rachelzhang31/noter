@@ -34,7 +34,7 @@ function check_web_storage_support() {
         return(true);
     }
     else {
-        alert("Web storage unsupported!");
+        alert("Web storage is NOT supported!");
         return(false);
     }
 }
@@ -54,7 +54,7 @@ function save() {
             localStorage.setItem("note", area.value);
         }
         else {
-            alert("Nothing to save");
+            alert("You haven't written anything.");
         }
     }
 }
